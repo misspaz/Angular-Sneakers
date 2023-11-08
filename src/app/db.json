@@ -1,0 +1,261 @@
+{
+  "store": [
+    {
+      "id": 1,
+      "title": "CONVERSE CHUCK 70 HI",
+      "price": 95,
+      "description": "High-top sneakers with polyester canvas uppers. OrthoLite cushioning for greater comfort. Leopard print trims, laces and patches. Exclusive Chuck Taylor design elements such as stripes on the midsole and rubber toe cap. Iconic Chuck Taylor ankle patch and vintage back logo.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_067803_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 2,
+      "title": "NEW BALANCE 550 PREMIUM LEATHER",
+      "price": 170,
+      "description": "The 550's sleek, low-top silhouette offers a clean take on the rugged designs of the late '80s, while the dependable leather upper construction is a classic look in any era.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_510942_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 3,
+      "title": "CONVERSE X GOLF WANG CHUCK 70",
+      "price": 100,
+      "description": "Premium high-top sneakers designed in collaboration with Tyler, The Creator and made from 340g polyester canvas. Iconic GOLF WANG flame print in brown and pink with brightly colored stripes. OrthoLite insole for more comfort. Rubber midsole for greater durability. Second set of laces in similar shades for more styling possibilities.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_682315_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 4,
+      "title": "VANS SK8-HI",
+      "price": 69.9,
+      "description": "The Vans Sk8-Hi are lightweight, high-top, lace-up sneakers with cushioning in the heel for more comfort, a reinforced toe cap that guarantees durability, and padded collars for greater support and flexibility. The distinctive rubber waffle outsole provides a firmer grip.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_058161_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 5,
+      "title": "CONVERSE RUN STAR LEGACY CX",
+      "price": 69.9,
+      "description": "The ultra-comfortable cushioning layer and lightweight curved platform add a touch of the future to your sneaker collection. New in a timeless tortoiseshell print.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_559111_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 6,
+      "title": "ADIDAS TORSION RESPONSE TENNIS",
+      "price": 69.9,
+      "description": "Adidas Originals Torsion Response Low. The idea behind the original adidas Torsion shoe was an ultralight design that supports the anatomy of the foot. Runners were immediately won over by the combination of stability and comfort, but it soon won over the general public. This adidas shoe is inspired by different Torsion versions. The result: a silhouette that combines '90s nostalgia and a host of running silhouettes.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_104502_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 7,
+      "title": "CONVERSE RUN STAR MOTION CX",
+      "price": 69.9,
+      "description": "Timeless turtle print and shiny overlays bring a runway look to the bold Run Star Motion CX platforms",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_559110_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 8,
+      "title": "NEW BALANCE 327",
+      "price": 120,
+      "description": "The 327 represents a milestone in the 70s in terms of innovation, transgressing classic style elements by giving them a contemporary look. With an angular redesign of the trusted wedge silhouette, asymmetrically applied large “N” branding and a trail-inspired lug outsole, the 327 is a comprehensive reinterpretation of our running classic.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_675108_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 9,
+      "title": "ADIDAS FORUM LOW",
+      "price": 119.9,
+      "description": "Inspired by '70s summer camp, this version includes special prints on the tongue and insole that invite you to continue its legacy.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_417290_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 10,
+      "title": "REEBOK CLUB C 85",
+      "price": 85,
+      "description": "Nothing can compare to a crisp white sneaker, and the Club C 85 is the original. This women's leather silhouette hits the mark of on-trend style. It comes with a durable sole and a classic logo on the side that pays homage to our roots.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_620246_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 11,
+      "title": "ASICS GEL-NYC",
+      "price": 150,
+      "description": "The GEL-NYC™ shoes are inspired by traditional and modern high-performance running models. The construction of its upper part references the GEL-NIMBUS™ 3 shoes from the early 2000s and is combined with various embellishments of the MC-PLUS V design.?The sole contrasts with the retro influences of the upper part using the set of features of the GEL-CUMULUS™ 16 shoe. The midsole combines lightweight foams and inserts with GEL™ technology.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_624227_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 12,
+      "title": "ASICS GEL-LYTE V",
+      "price": 128,
+      "description": "The GEL-LYTE™ V sneakers from the SPRING IN JAPAN™ collection are inspired by the flowers that bloom during the spring season in Japan. Its upper part is made of pigskin nubuck and on the tongue it has a 'Kamon' flower embroidery. Neutral tones are offset by various pops of color that borrow influences from wisteria, cherry blossom, hydrangea, nemophila species and mustard flowers.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_694125_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 13,
+      "title": "ADIDAS HYPERTURF",
+      "price": 69.9,
+      "description": "Straps on the heels fit you whether you're wearing socks or not. Adiprene+ helps absorb impact with superior cushioning and FORMOTION adapts to the ground for an ultra-smooth ride.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_660004_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 14,
+      "title": "ADIDAS FORUM LOW W",
+      "price": 109.9,
+      "description": "The lacing system is complemented by a velcro closure. Thanks to the breathable fabric lining, every step is a pleasure. The soft insole and grippy rubber sole also provide additional support.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_666770_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 15,
+      "title": "CONVERSE RUN STAR MOTION CX HI",
+      "price": 69.9,
+      "description": "A twist on the classic Chuck Taylor All-Star High, the Converse Run Star Motion features bold lines and an exaggerated profile to help you stand out.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_666598_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 16,
+      "title": "CONVERSE RUN STAR MOTION OX",
+      "price": 69.9,
+      "description": "This eye-catching grippy base is paired with an organic cotton canvas upper that uses the same stitching, laces and vintage logo on the inside of the tongue as the iconic Chuck 70. Without forgetting the lightness and maximum comfort they offer the CX insole and the CX foam midsole.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_559111_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 17,
+      "title": "ADIDAS FORUM 84 HI",
+      "price": 69.9,
+      "description": "This version of the '80s adidas Forum features a highly wear-resistant suede, nubuck and grained leather upper. The snakeskin print makes your style stand out even more. The hook-and-loop ankle strap gives you a precise fit. The stitched rubber sole guarantees a more comfortable tread.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_568817_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 18,
+      "title": "VANS OLD SKOOL",
+      "price": 9.85,
+      "description": "Constructed with durable canvas and synthetic leather uppers in a range of fresh colorways, the Old Skool pays homage to our heritage while ensuring that this low top, lace-up shoe remains as iconic as ever. It also features re-enforced toe caps, supportive padded collars, and signature rubber waffle outsoles.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_061773_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 19,
+      "title": "VANS SLIP ON PLATAFORM",
+      "price": 67.92,
+      "description": "The Classic Slip-On Platform Sneakers are a low-top slip-on sneaker made with durable canvas uppers in Vans' signature Checkerboard print and featuring a padded collar, elastic side detailing, and signature rubber waffle outsoles.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_535733_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 20,
+      "title": "VANS SK8-HI",
+      "price": 69.9,
+      "description": "The Color Theory collection combines a palette of bright and unexpected colors with some of our most iconic silhouettes so you can create a totally personalized and colorful look.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_684358_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "title": "ADIDAS STAN SMITH MILLENCON W",
+      "price": 69.9,
+      "description": "This adidas sneaker features a futuristic design with wavy lines and a silhouette with contrasting proportions. Inspired by the basketball style of the 2000s, its leather upper and wavy sole give it a unique style.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_398359_a?qlt=92&w=750&h=531&v=1&fmt=auto",
+      "id": 21
+    },
+    {
+      "title": "ADIDAS ADIFOM Q",
+      "price": 69.9,
+      "description": "Adidas adiFOM Q. This shoe sports a surprising exoskeleton that transports us to the future. The robust upper part is made of foam.",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_676835_a?qlt=92&w=750&h=531&v=1&fmt=auto",
+      "id": 22
+    }
+  ],
+
+  "users:": [
+    {
+      "id": 1,
+      "email": "john@gmail.com",
+      "username": "johnd",
+      "password": "m38rmF$",
+      "firstname": "john",
+      "lastname": "doe",
+      "phone": "1-570-236-7033",
+      "address": {
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+      }
+    },
+
+    {
+      "id": 2,
+      "email": "morrison@gmail.com",
+      "username": "mor_2314",
+      "password": "83r5^_",
+      "firstname": "david",
+      "lastname": "morrison",
+      "phone": "1-570-236-7033",
+      "address": {
+        "city": "kilcoole",
+        "street": "Lovers Ln",
+        "number": 7267,
+        "zipcode": "12926-3874"
+      }
+    },
+
+    {
+      "id": 3,
+      "email": "kevin@gmail.com",
+      "username": "kevinryan",
+      "password": "kev02937@",
+      "firstname": "kevin",
+      "lastname": "ryan",
+      "phone": "1-567-094-1345",
+      "address": {
+        "city": "Cullman",
+        "street": "Frances Ct",
+        "number": 86,
+        "zipcode": "29567-1452"
+      }
+    },
+
+    {
+      "id": 4,
+      "email": "don@gmail.com",
+      "username": "donero",
+      "password": "ewedon",
+      "firstname": "don",
+      "lastname": "romer",
+      "phone": "1-765-789-6734",
+      "address": {
+        "city": "San Antonio",
+        "street": "Hunters Creek Dr",
+        "number": 6454,
+        "zipcode": "98234-1734"
+      }
+    },
+    {
+      "id": 5,
+      "email": "kate@gmail.com",
+      "username": "kate_h",
+      "password": "kfejk@*_",
+      "firstname": "kate",
+      "lastname": "hale",
+      "phone": "1-678-456-1934",
+      "address": {
+        "city": "miami",
+        "street": "avondale ave",
+        "number": 345,
+        "zipcode": "96378-0245"
+      }
+    }
+  ]
+}

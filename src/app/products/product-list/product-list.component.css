@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Sora Bold";
+  src: url(../../../assets//fonts/Sora-Bold.otf);
+}
+
+@font-face {
+  font-family: "Sora Regular";
+  src: url(../../../assets//fonts/Sora-Regular.otf);
+}
+
+@font-face {
+  font-family: "Sora Light";
+  src: url(../../../assets//fonts/Sora-Light.otf);
+}
+
+.main-header {
+  background-image: url(../../../assets/texture-bg.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.main-header-container {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.main-header-info {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.button-shop {
+  background-color: #fe4c58;
+  color: white;
+  width: 120px;
+  height: 30px;
+  font-family: "Sora Bold";
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.main-header-title {
+  font-family: "Sora Bold";
+  color: white;
+  font-size: 100px;
+}
+
+.header-image {
+  width: 43%;
+}
+.logo {
+  width: 200px;
+}
+
+.logo-div {
+  width: 20%;
+  margin-left: 140px;
+}
+
+.h2-style {
+  font-family: "Sora Bold";
+  font-size: 60px;
+  color: #1a1f23;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.h3-style {
+  font-family: "Sora Bold";
+}
+
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-products {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  font-family: "Sora Regular";
+  width: 380px;
+  margin: 10px;
+}
+
+.product-container {
+  height: 502px;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start; */
+}
+
+.sneaker-image {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.button-style {
+  background-color: #fe4c58;
+  color: white;
+  width: 80px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: #fe4c58;
+  width: 80px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+  border: 1px solid #fe4c58;
+}
+
+.category {
+  font-family: "Sora Light";
+  color: rgb(201, 201, 201);
+}

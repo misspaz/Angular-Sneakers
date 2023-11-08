@@ -1,0 +1,52 @@
+<!-- <input [(ngModel)]="selectedCategory" placeholder="Categoría">
+<button (click)="searchByCategory()">Buscar por Categoría</button> -->
+<div class="main-header">
+  <div class="logo-div">
+    <img class="logo" src="../assets//logo-white.png" alt="logo-shop" />
+  </div>
+
+  <div class="main-header-container">
+    <div class="main-header-info">
+      <div class="main-header-text">
+        <h1 class="main-header-title">SNEAKERS!</h1>
+        <button class="button-shop">Shop now</button>
+      </div>
+
+      <img
+        class="header-image"
+        src="../assets//sneakers-header-image.png"
+        alt="sneaker-header-image"
+      />
+    </div>
+  </div>
+</div>
+<div class="product-page">
+  <h2 class="h2-style">Shop our best sneakers!</h2>
+  <ul class="main-products">
+    <li class="product-card" *ngFor="let product of products">
+      <div class="product-container">
+        <!-- <p>{{ product.id || "N/A" }}</p> -->
+        <p class="category">{{ product.category }}</p>
+        <img
+          class="sneaker-image"
+          src="{{ product.image }}"
+          alt="{{ product.title }}"
+        />
+        <h3 class="h3-style">{{ product.title }}</h3>
+
+        <p>{{ product.price }}€</p>
+        
+
+        <button
+          [routerLink]="['/products/detail', product.id]"
+          class="button-style"
+          *ngIf="product.id !== undefined"
+          (click)="navigateToProductDetail(product.id!)"
+        >
+          More info
+        </button>
+        <!-- <button (click)="deleteProduct(product.id || 0)">X</button> -->
+      </div>
+    </li>
+  </ul>
+</div>
