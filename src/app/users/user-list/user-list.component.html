@@ -1,0 +1,47 @@
+<header class="header-detail">
+  <div class="logo-div">
+    <img class="logo" src="../../../assets//logo-white.png" alt="logo" />
+  </div>
+</header>
+
+<h2 class="h2-style">Our users</h2>
+
+<div class="main-users">
+  <ul class="ul-style">
+    <li class="user-card" *ngFor="let user of users">
+      <div>
+        <div class="profile-pic-div">
+          <img
+            class="profile-pic"
+            src="https://randomuser.me/api/portraits/lego/5.jpg"
+            alt="profile-image"
+          />
+        </div>
+        <div class="profile-info-div">
+          <h2 class="username-style">{{ user.username }}</h2>
+          <h4 class="name-style">{{ user.firstname }} {{ user.lastname }}</h4>
+          <p class="p-style">{{ user.email }}</p>
+          <p class="p-style">{{ user.phone }}</p>
+          <p class="address-style">City: {{ user.address.city }}</p>
+          <p class="address-style">Street: {{ user.address.street }}</p>
+          <p class="address-style">Number: {{ user.address.number }}</p>
+          <p class="address-style">Zipcode: {{ user.address.zipcode }}</p>
+        </div>
+
+        <div class="buttons-div">
+          <button
+            [routerLink]="['/users', user.id]"
+            class="button-style"
+            *ngIf="user.id !== undefined"
+            (click)="navigateToUserDetail(user.id!)"
+          >
+            Visit this profile
+          </button>
+          <!-- <button class="button-delete" (click)="deleteUser(user.id || 0)">
+          X
+        </button>  -->
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

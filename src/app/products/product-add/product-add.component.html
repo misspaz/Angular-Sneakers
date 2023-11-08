@@ -1,4 +1,6 @@
-<form [formGroup]="productForm" (ngSubmit)="save()">
+<div class="product-add-page">
+  <h1 class="title">Add a sneaker!</h1>
+<form class="form-style" [formGroup]="productForm" (ngSubmit)="save()">
   <div class="form-group">
     <label for="title">Title</label>
 
@@ -6,7 +8,7 @@
       type="text"
       id="title"
       formControlName="title"
-      class="form-control p-inputgroup-addon"
+      class="form-control input-style"
       required
     />
   </div>
@@ -17,7 +19,7 @@
       type="number"
       id="price"
       formControlName="price"
-      class="form-control"
+      class="form-control input-style"
       required
     />
   </div>
@@ -28,7 +30,7 @@
       type="text"
       id="description"
       formControlName="description"
-      class="form-control"
+      class="form-control input-style"
     ></textarea>
   </div>
 
@@ -38,7 +40,7 @@
       type="string"
       id="category"
       formControlName="category"
-      class="form-control"
+      class="form-control input-style"
     />
   </div>
 
@@ -48,11 +50,17 @@
       type="url"
       id="image"
       formControlName="image"
-      class="form-control"
+      class="form-control input-style"
       required
     />
   </div>
+<div class="buttons-div">
+  <button class="button-style" type="submit">Add</button>
+  <button class="button-clear" type="button" (click)="resetForm()">Clear</button>
+</div>
 
-  <button type="submit">Add</button>
-  <button type="button" (click)="resetForm()">Clear</button>
 </form>
+<div class="message" *ngIf="updateMessage">
+  {{updateMessage}}
+</div>
+</div>

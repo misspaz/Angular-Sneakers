@@ -7,13 +7,16 @@ import { IUser } from '../models/user.model';
   providedIn: 'root'
 })
 export class UserService {
+  
 
   userUrl: string = 'http://localhost:3000/users'
 
 
   constructor(private httpCliente: HttpClient) { }
 
-  findAllUsers(): Observable<IUser[]>{
+  findAll(): Observable<IUser[]>{
+
+    
     return this.httpCliente.get<IUser[]>(this.userUrl);
   }
 
@@ -23,6 +26,10 @@ export class UserService {
 
   findUserByCity(address: { city: any; }): Observable<IUser[]> {
     return this.httpCliente.get<IUser[]>(`${this.userUrl}/?city=${address.city}`);
+  }
+
+  delete(id: number): Observable<IUser>{
+    return this.httpCliente.delete<IUser>(`${this.userUrl}/${id}`);
   }
 
 }

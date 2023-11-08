@@ -10,6 +10,7 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./product-add.component.css'],
 })
 export class ProductAddComponent implements OnInit {
+  updateMessage: string = '';
   productForm = new FormGroup({
     id: new FormControl<number>(0),
     title: new FormControl<string>('', [Validators.required]),
@@ -49,6 +50,8 @@ export class ProductAddComponent implements OnInit {
         console.log('Producto subido correctamente', data);
         this.resetForm();
       });
+
+      this.updateMessage = 'Sneaker created!';
     } else {
       console.log('Formulario no válido');
     }

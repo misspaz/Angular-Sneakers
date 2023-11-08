@@ -1,61 +1,72 @@
-<form [formGroup]="editProductForm" (ngSubmit)="update()">
-  <div class="form-group">
-    <label>ID</label>
-    <input type="number" formControlName="id" class="form-control" />
-  </div>
+<div class="product-add-page">
+  <h1 class="title">Edit a sneaker</h1>
+  <form [formGroup]="editProductForm" (ngSubmit)="update()">
+    <div class="form-group">
+      <label>ID</label>
+      <input
+        type="number"
+        formControlName="id"
+        class="form-control input-style"
+      />
+    </div>
 
-  <div class="form-group">
-    <label for="editTitle">Title</label>
-    <input
-      type="text"
-      id="editTitle"
-      formControlName="title"
-      class="form-control"
-      required
-    />
-  </div>
+    <div class="form-group">
+      <label for="editTitle">Title</label>
+      <input
+        type="text"
+        id="editTitle"
+        formControlName="title"
+        class="form-control input-style"
+        required
+      />
+    </div>
 
-  <div class="form-group">
-    <label for="editPrice">Price</label>
-    <input
-      type="number"
-      id="editPrice"
-      formControlName="price"
-      class="form-control"
-      required
-    />
-  </div>
+    <div class="form-group">
+      <label for="editPrice">Price</label>
+      <input
+        type="number"
+        id="editPrice"
+        formControlName="price"
+        class="form-control input-style"
+        required
+      />
+    </div>
 
-  <div class="form-group">
-    <label for="editDescription">Description</label>
-    <textarea
-      type="text"
-      id="editDescription"
-      formControlName="description"
-      class="form-control"
-    ></textarea>
-  </div>
+    <div class="form-group">
+      <label for="editDescription">Description</label>
+      <textarea
+        type="text"
+        id="editDescription"
+        formControlName="description"
+        class="form-control input-style"
+      ></textarea>
+    </div>
 
-  <div class="form-group">
-    <label for="editCategory">Category</label>
-    <input
-      type="string"
-      id="editCategory"
-      formControlName="category"
-      class="form-control"
-    />
-  </div>
+    <div class="form-group">
+      <label for="editCategory">Category</label>
+      <input
+        type="string"
+        id="editCategory"
+        formControlName="category"
+        class="form-control input-style"
+      />
+    </div>
 
-  <div class="form-group">
-    <label for="editImage">Image</label>
-    <input
-      type="url"
-      id="editImage"
-      formControlName="image"
-      class="form-control"
-      required
-    />
+    <div class="form-group">
+      <label for="editImage">Image</label>
+      <input
+        type="url"
+        id="editImage"
+        formControlName="image"
+        class="form-control input-style"
+        required
+      />
+    </div>
+    <div class="buttons-div">
+      <button class="button-style" type="submit">Edit</button>
+    </div>
+  </form>
+  <div class="message" *ngIf="updateMessage">
+    {{ updateMessage }}
   </div>
-
-  <button type="submit">Edit</button>
-</form>
+</div>

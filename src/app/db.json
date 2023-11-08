@@ -27,7 +27,7 @@
     {
       "id": 4,
       "title": "VANS SK8-HI",
-      "price": 69.9,
+      "price": 80,
       "description": "The Vans Sk8-Hi are lightweight, high-top, lace-up sneakers with cushioning in the heel for more comfort, a reinforced toe cap that guarantees durability, and padded collars for greater support and flexibility. The distinctive rubber waffle outsole provides a firmer grip.",
       "category": "man",
       "image": "https://i8.amplience.net/i/jpl/jd_058161_a?qlt=92&w=750&h=531&v=1&fmt=auto"
@@ -175,10 +175,25 @@
       "category": "man",
       "image": "https://i8.amplience.net/i/jpl/jd_676835_a?qlt=92&w=750&h=531&v=1&fmt=auto",
       "id": 22
+    },
+    {
+      "id": 24,
+      "title": "Vans 66/99/19 Rowley Classic",
+      "price": 85,
+      "description": "Represent the original skater style with these men's Rowley Classic 66/99/19 sneakers from Vans. Exclusive to JD, these sneakers come in a dark grey, black and white colourway and are made from soft suede uppers with durable canvas. They feature a tonal lace-up closure with a low-cut padded collar to support you and sit atop a streamlined, cushioned midsole for a smooth ride. ",
+      "category": "man",
+      "image": "https://i8.amplience.net/i/jpl/jd_677965_a?qlt=92&w=750&h=531&v=1&fmt=auto"
+    },
+    {
+      "id": 25,
+      "title": "Vans Knu Skool",
+      "price": 90,
+      "description": "\nThese Vans Knu Skool sneakers are a renewed model from the 90s, when skate shoes were still very rough. This model is navy blue with white details, so it is very reminiscent of the original Old Skool.",
+      "category": "woman",
+      "image": "https://i8.amplience.net/i/jpl/jd_638414_a?qlt=92&w=750&h=531&v=1&fmt=auto"
     }
   ],
-
-  "users:": [
+  "users": [
     {
       "id": 1,
       "email": "john@gmail.com",
@@ -194,7 +209,6 @@
         "zipcode": "12926-3874"
       }
     },
-
     {
       "id": 2,
       "email": "morrison@gmail.com",
@@ -210,7 +224,6 @@
         "zipcode": "12926-3874"
       }
     },
-
     {
       "id": 3,
       "email": "kevin@gmail.com",
@@ -226,7 +239,6 @@
         "zipcode": "29567-1452"
       }
     },
-
     {
       "id": 4,
       "email": "don@gmail.com",

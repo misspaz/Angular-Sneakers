@@ -13,6 +13,38 @@
   src: url(../../../assets//fonts/Sora-Light.otf);
 }
 
+.search-line{
+  color: white;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  width: 250px;
+  font-family: "Sora Regular";
+  margin-right: 20px;
+}
+
+.nav-bar-style{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button-search{
+  background-color: #fe4c58;
+  color: white;
+  width: 71px;
+  height: 19px;
+  font-family: "Sora Bold";
+  border-radius: 30px;
+  font-size: 10px;
+}
+
+
 .main-header {
   background-image: url(../../../assets/texture-bg.jpg);
   height: 100vh;
@@ -68,10 +100,10 @@
   width: 200px;
 }
 
-.logo-div {
+/* .logo-div {
   width: 20%;
   margin-left: 140px;
-}
+} */
 
 .h2-style {
   font-family: "Sora Bold";
@@ -112,6 +144,8 @@
 
 .product-container {
   height: 502px;
+  padding: 10px;
+  border: 1px solid #c7c7c7;
   /* display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -148,4 +182,34 @@
 .category {
   font-family: "Sora Light";
   color: rgb(201, 201, 201);
+}
+
+.button-delete {
+  background-color: #1f2323;
+  color: white;
+  width: 30px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.button-delete:hover {
+  background-color: white;
+  color: #1f2323;
+  border: 1px solid #1f2323;
+  width: 30px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.buttons-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
 }

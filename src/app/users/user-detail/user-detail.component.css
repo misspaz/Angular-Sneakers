@@ -1,0 +1,17 @@
+.header-detail {
+  width: 100%;
+  background-image: url(../../../assets/texture-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 150px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo-div {
+  width: 20%;
+  margin-left: 140px;
+}
