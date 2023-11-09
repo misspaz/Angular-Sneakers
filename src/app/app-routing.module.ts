@@ -16,6 +16,10 @@ const routes: Routes = [
       import('./users/users/users.module').then((m) => m.UsersModule),
   },
   {
+    path: 'auth',
+    loadChildren: () => import('./users/auth/auth.module').then(m => m.AuthModule) // lazy loading
+  },
+  {
     path: '',
     redirectTo: 'products',
     pathMatch: 'full',

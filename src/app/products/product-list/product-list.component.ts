@@ -33,6 +33,10 @@ export class ProductListComponent implements OnInit {
   navigateToProductDetail(id: number) {
     this.router.navigate(['products/detail', id]);
   }
+
+  navigateToProductEdit(id: number) {
+    this.router.navigate(['products/edit', id]);
+  }
   
 
   deleteProduct(id: number): void {

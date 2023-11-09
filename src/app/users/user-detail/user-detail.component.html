@@ -1,11 +1,28 @@
 <header class="header-detail">
-    <div class="logo-div">
-      <img class="logo" src="../../../assets//logo-white.png" alt="logo" />
+  <div class="logo-div">
+    <img class="logo" src="../../../assets//logo-white.png" alt="logo" />
+  </div>
+</header>
+<div class="profile-page">
+  <h2 class="h2-style">Profile</h2>
+
+  <div class="profile-div">
+    <div class="left-col">
+      <img
+        class="profile-pic"
+        src="https://randomuser.me/api/portraits/lego/5.jpg"
+        alt="profile-image"
+      />
+      <h2 class="username-style">{{ user?.username }}</h2>
     </div>
-  </header>
-  
 
-
-<div>
-    <h3>{{user?.firstname}}</h3>
+    <div class="right-col">
+      <h4 class="name-style">{{ user?.firstname }} {{ user?.lastname }}</h4>
+      <p class="p-style">{{ user?.phone }}</p>
+      <p class="address-style">City: {{ user?.address?.city }}</p>
+      <p class="address-style">Street: {{ user?.address?.street }}</p>
+      <p class="address-style">Number: {{ user?.address?.number }}</p>
+      <p class="address-style">Zipcode: {{ user?.address?.zipcode }}</p>
+    </div>
+  </div>
 </div>

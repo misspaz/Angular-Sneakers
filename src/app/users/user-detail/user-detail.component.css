@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Sora Bold";
+  src: url(../../../assets//fonts/Sora-Bold.otf);
+}
+
+@font-face {
+  font-family: "Sora Regular";
+  src: url(../../../assets//fonts/Sora-Regular.otf);
+}
+
+@font-face {
+  font-family: "Sora Light";
+  src: url(../../../assets//fonts/Sora-Light.otf);
+}
+
 .header-detail {
   width: 100%;
   background-image: url(../../../assets/texture-bg.jpg);
@@ -14,4 +29,82 @@
 .logo-div {
   width: 20%;
   margin-left: 140px;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.h2-style {
+  font-family: "Sora Bold";
+  font-size: 50px;
+}
+
+.profile-div {
+  width: 49%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cacaca;
+}
+
+.left-col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.right-col {
+  width: 30%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  width: 42%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #cacaca;
+}
+
+.username-style {
+  font-family: "Sora Bold";
+  font-size: 30px;
+  color: #1a1f23;
+}
+
+.name-style {
+  font-family: "Sora Bold";
+  font-size: 15px;
+}
+
+.p-style {
+  font-family: "Sora Regular";
+  color: rgb(156, 156, 156);
+  font-size: 12px;
+  padding-bottom: 3px;
+}
+
+.address-style {
+  font-family: "Sora Light";
+  color: rgb(199, 199, 199);
+  font-size: 10px;
 }

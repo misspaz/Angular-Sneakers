@@ -31,7 +31,10 @@
     <li class="product-card" *ngFor="let product of products">
       <div class="product-container">
         <!-- <p>{{ product.id || "N/A" }}</p> -->
-        <p class="category">{{ product.category }}</p>
+        <div class="category-n-edit">
+          <p class="category">{{ product.category }}</p>
+        <button (click)="navigateToProductEdit(product.id!)" class="button-edit" [routerLink]="['/edit', product.id]">Edit</button>
+             </div>
         <img
           class="sneaker-image"
           src="{{ product.image }}"

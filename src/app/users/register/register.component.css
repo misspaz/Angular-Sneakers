@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Sora Bold";
+    src: url(../../../assets//fonts/Sora-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: "Sora Regular";
+    src: url(../../../assets//fonts/Sora-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: "Sora Light";
+    src: url(../../../assets//fonts/Sora-Light.otf);
+  }
+
+.register-page {
+  display: flex;
+  height: 100vh;
+}
+.register-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.register-image-div {
+  width: 50%;
+  background-image: url(../../../assets/register-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+
+.form-style {
+    width: 350px;
+    height: 250px;
+    padding: 15px;
+    font-family: "Sora Bold";
+    border: 1px dotted #9DA8E9;
+  }
+
+  .input-style {
+    font-family: "Sora Regular";
+    background-color: #e0e4fd;
+    margin-bottom: 15px;
+    color: #38393d;
+  }
+
+  .info-div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label-style{
+    font-family: "Sora Bold";
+    font-size: 20px;
+  }
+
+  .title{
+    font-family: "Sora Bold";
+    color: #38393d;
+}
+
+.link-style{
+    color: #858fbb;
+}
+
+.p-style{
+    font-family: "Sora Regular";
+    color: #838383;
+    margin-top: 10px;
+}
+
+.button-style {
+    background-color: #FCE2E7;
+    color: #858fbb;
+    width: 110px;
+    height: 30px;
+    font-family: "Sora Bold";
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  .button-style:hover {
+    background-color: #A5B3F0;
+    color: #FCE2E7;
+    width: 110px;
+    height: 30px;
+    font-family: "Sora Bold";
+    border-radius: 20px;
+    font-size: 16px;
+  }

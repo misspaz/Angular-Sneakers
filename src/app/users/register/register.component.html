@@ -1,1 +1,38 @@
-<p>register works!</p>
+<div class="register-page">
+  <div class="register-info">
+    <h2 class="title">Create new account</h2>
+
+    <form class="form-style" [formGroup]="userForm" (ngSubmit)="save()">
+      <div class="info-div">
+        <label class="label-style">Username</label>
+        <input class="input-style" type="text" formControlName="username" />
+      </div>
+
+      <div class="info-div">
+        <label>Email</label>
+        <input class="input-style" type="email" formControlName="email" />
+      </div>
+
+      <div class="info-div">
+        <label>Password</label>
+        <input class="input-style" type="password" formControlName="password" />
+      </div>
+
+      <button class="button-style" type="submit" [disabled]="userForm.invalid">
+        Enviar
+      </button>
+    </form>
+    <div>
+      <p class="p-style">
+        Already a user? <a class="link-style" href="http://localhost:4200/auth/login">Log in</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="register-image-div"></div>
+</div>
+
+<!-- 
+<div>
+  <checkbox formControlName="isOwner">¿Eres perfil profesional (owner)?</checkbox>
+</div> -->

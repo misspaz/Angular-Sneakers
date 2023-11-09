@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="login-page">
+  <div class="login-image-div"></div>
+  <div class="login-info">
+    <h2>Iniciar sesión</h2>
+
+    <form class="form-style" [formGroup]="userForm" (ngSubmit)="save()">
+      <div class="info-div">
+        <label>Email</label>
+        <input class="input-style" type="email" formControlName="email" />
+      </div>
+
+      <div class="info-div">
+        <label>Contraseña</label>
+        <input class="input-style" type="password" formControlName="password" />
+      </div>
+
+      <button class="button-style" type="submit" [disabled]="userForm.invalid">
+        Enviar
+      </button>
+    </form>
+  </div>
+</div>

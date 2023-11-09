@@ -32,4 +32,12 @@ export class UserService {
     return this.httpCliente.delete<IUser>(`${this.userUrl}/${id}`);
   }
 
+  findCurrentUser(): Observable<IUser> {
+    return this.httpCliente.get<IUser>(`${this.userUrl}/current`);
+  }
+
+  update(user: IUser): Observable<IUser> {
+    return this.httpCliente.put<IUser>(`${this.userUrl}`, user);
+  }
+
 }

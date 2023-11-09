@@ -143,20 +143,22 @@
 }
 
 .product-container {
-  height: 502px;
+  height: 460px;
   padding: 10px;
   border: 1px solid #c7c7c7;
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
-  align-items: flex-start; */
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .sneaker-image {
   width: 100%;
   padding-bottom: 15px;
 }
+
 
 .button-style {
   background-color: #fe4c58;
@@ -182,6 +184,37 @@
 .category {
   font-family: "Sora Light";
   color: rgb(201, 201, 201);
+}
+
+.category-n-edit{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.button-edit {
+  background-color: white;
+  color: #1f2323;
+  border: 1px solid #1f2323;
+  width: 42px;
+  height: 18px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.button-edit:hover {
+  background-color: #1f2323;
+  color: white;
+  width: 42px;
+  height: 18px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
 }
 
 .button-delete {

@@ -10,6 +10,7 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UsersModule } from './users/users/users.module';
+import { AuthModule } from './users/auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +25,7 @@ import { UsersModule } from './users/users/users.module';
     RadioButtonModule,
     NgbModule,
     UsersModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent],
