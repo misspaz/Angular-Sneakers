@@ -33,7 +33,6 @@ export class RegisterComponent {
   
       this.authService.register(register).subscribe((data: { token: any; }) => {
         console.log(data.token);
-        // Guardar el token para utilizarlo en las posteriores peticiones
         this.authService.handleLoginResponse(data.token);
         this.router.navigate(['/products']);
   

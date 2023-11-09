@@ -11,29 +11,30 @@ export class ProductService {
 
   url: string = 'http://localhost:3000/store'
 
- constructor(private httpCliente: HttpClient) {}
+ constructor(private httpClient: HttpClient) {}
 
   findAll(): Observable<IProduct[]>{
-    return this.httpCliente.get<IProduct[]>(this.url);
+    return this.httpClient.get<IProduct[]>(this.url);
   }
 
   findById(id: number): Observable<IProduct>{
-    return this.httpCliente.get<IProduct>(`${this.url}/${id}`);
+    return this.httpClient.get<IProduct>(`${this.url}/${id}`);
   }
 
   findByCategory(category: string): Observable<IProduct[]> {
-    return this.httpCliente.get<IProduct[]>(`${this.url}/?category=${category}`);
+    return this.httpClient.get<IProduct[]>(`${this.url}/?category=${category}`);
   }
 
   create(store: IProduct): Observable<IProduct>{
-    return this.httpCliente.post<IProduct>(this.url, store);
+    return this.httpClient.post<IProduct>(this.url, store);
   }
 
   update(store: IProduct): Observable<IProduct>{
-    return this.httpCliente.put<IProduct>(`${this.url}/${store.id}`, store);
+    return this.httpClient.put<IProduct>(`${this.url}/${store.id}`, store);
   }
 
   delete(id: number): Observable<IProduct>{
-    return this.httpCliente.delete<IProduct>(`${this.url}/${id}`);
+    return this.httpClient.delete<IProduct>(`${this.url}/${id}`);
   }
+
 }

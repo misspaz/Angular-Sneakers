@@ -1,13 +1,42 @@
 <div class="main-header">
   <div class="nav-bar-style">
-  <div class="logo-div">
-    <img class="logo" src="../assets//logo-white.png" alt="logo-shop" />
+    <div class="logo-div">
+      <a href="http://localhost:4200/products"
+        ><img class="logo" src="../assets//logo-white.png" alt="logo-shop"
+      /></a>
+    </div>
+
+    <div class="search-n-cart">
+      <div class="search-div">
+        <input
+          class="search-line"
+          [(ngModel)]="selectedCategory"
+          placeholder="Search..."
+        />
+        <button class="button-search" (click)="searchByCategory()">
+          Search
+        </button>
+      </div>
+
+      <div [routerLink]="['/auth/login']">
+        <img
+          class="profile-div"
+          src="../../../assets/profile-icon.png"
+          alt="profile-icon"
+        />
+      </div>
+
+      <div class="cart-div" routerLink="cart">
+        <img
+          class="cart-icon"
+          src="../../../assets//cart.png"
+          alt="cart-icon"
+        />
+
+        <div>{{ totalItem }}</div>
+      </div>
+    </div>
   </div>
-  <div class="search-div">
-    <input class="search-line" [(ngModel)]="selectedCategory" placeholder="Search..." />
-    <button class="button-search" (click)="searchByCategory()">Search</button>
-  </div>
-</div>
 
   <div class="main-header-container">
     <div class="main-header-info">
@@ -30,29 +59,41 @@
   <ul class="main-products">
     <li class="product-card" *ngFor="let product of products">
       <div class="product-container">
-        <!-- <p>{{ product.id || "N/A" }}</p> -->
         <div class="category-n-edit">
           <p class="category">{{ product.category }}</p>
-        <button (click)="navigateToProductEdit(product.id!)" class="button-edit" [routerLink]="['/edit', product.id]">Edit</button>
-             </div>
-        <img
-          class="sneaker-image"
-          src="{{ product.image }}"
-          alt="{{ product.title }}"
-        />
-        <h3 class="h3-style">{{ product.title }}</h3>
-
-        <p>{{ product.price }}€</p>
-
-        <div class="buttons-div">
-          <button
+          <!-- <button
             [routerLink]="['/products/detail', product.id]"
             class="button-style"
             *ngIf="product.id !== undefined"
             (click)="navigateToProductDetail(product.id!)"
           >
             More info
+          </button> -->
+          <button
+            (click)="navigateToProductEdit(product.id!)"
+            class="button-edit"
+            [routerLink]="['/edit', product.id]"
+          >
+            Edit
           </button>
+        </div>
+        <img
+          [routerLink]="['/products/detail', product.id]"
+          class="sneaker-image"
+          src="{{ product.image }}"
+          alt="{{ product.title }}"
+        />
+        <h3 [routerLink]="['/products/detail', product.id]" class="h3-style">
+          {{ product.title }}
+        </h3>
+
+        <p>{{ product.price }}€</p>
+
+        <div class="buttons-div">
+          <button class="button-add-to-cart" (click)="addtocart(product)">
+            Add to cart
+          </button>
+
           <button
             class="button-delete"
             (click)="deleteProduct(product.id || 0)"
@@ -63,4 +104,11 @@
       </div>
     </li>
   </ul>
+
+  <div class="add-product-div">
+    <div class="add-info">
+      <h3 class="h3-add">Add a new sneaker!</h3>
+      <button class="button-add" routerLink="/products/add">Add</button>
+    </div>
+  </div>
 </div>

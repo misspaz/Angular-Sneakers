@@ -37,6 +37,10 @@
   background-position: center;
 }
 
+.logo {
+  width: 200px;
+}
+
 .form-style {
     width: 350px;
     height: 198px;

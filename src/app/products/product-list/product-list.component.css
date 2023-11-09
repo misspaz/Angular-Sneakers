@@ -13,7 +13,7 @@
   src: url(../../../assets//fonts/Sora-Light.otf);
 }
 
-.search-line{
+.search-line {
   color: white;
   background-color: transparent;
   border-bottom: 1px solid white;
@@ -22,7 +22,7 @@
   margin-right: 20px;
 }
 
-.nav-bar-style{
+.nav-bar-style {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -34,7 +34,7 @@
   padding-right: 50px;
 }
 
-.button-search{
+.button-search {
   background-color: #fe4c58;
   color: white;
   width: 71px;
@@ -43,7 +43,6 @@
   border-radius: 30px;
   font-size: 10px;
 }
-
 
 .main-header {
   background-image: url(../../../assets/texture-bg.jpg);
@@ -87,6 +86,42 @@
   font-size: 18px;
 }
 
+.button-shop:hover {
+  background-color: white;
+  color: #fe4c58;
+  border: 1px solid #fe4c58;
+  width: 120px;
+  height: 30px;
+  font-family: "Sora Bold";
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.search-div {
+  margin-right: 30px;
+}
+
+.button-add-to-cart {
+  background-color: #fe4c58;
+  color: white;
+  width: 80px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.button-add-to-cart:hover {
+  background-color: white;
+  color: #fe4c58;
+  width: 80px;
+  height: 15px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 10px;
+  border: 1px solid #fe4c58;
+}
+
 .main-header-title {
   font-family: "Sora Bold";
   color: white;
@@ -104,6 +139,15 @@
   width: 20%;
   margin-left: 140px;
 } */
+
+.search-n-cart {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 
 .h2-style {
   font-family: "Sora Bold";
@@ -142,6 +186,27 @@
   margin: 10px;
 }
 
+.cart-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora Bold";
+  color: white;
+}
+
+.cart-icon {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.profile-div{
+  width: 25px;
+  margin-right: 5px;
+}
+
 .product-container {
   height: 460px;
   padding: 10px;
@@ -159,9 +224,8 @@
   padding-bottom: 15px;
 }
 
-
 .button-style {
-  background-color: #fe4c58;
+  background-color: #978c84;
   color: white;
   width: 80px;
   height: 15px;
@@ -186,7 +250,7 @@
   color: rgb(201, 201, 201);
 }
 
-.category-n-edit{
+.category-n-edit {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -194,7 +258,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 
 .button-edit {
   background-color: white;
@@ -245,4 +308,40 @@
   align-content: center;
   justify-content: space-between;
   align-items: center;
+}
+
+.add-product-div {
+  background-position: center;
+  width: 1004px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  background-image: url(../../../assets/sneaker-product.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.h3-add {
+  font-family: "Sora Bold";
+  font-size: 42px;
+  color: white;
+}
+
+.button-add {
+  background-color: #fe4c58;
+  color: white;
+  width: 108px;
+  height: 28px;
+  font-family: "Sora Bold";
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.add-info {
+  width: 350px;
+  margin-right: 113px;
 }

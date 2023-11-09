@@ -1,7 +1,13 @@
 <div class="login-page">
   <div class="login-image-div"></div>
   <div class="login-info">
-    <h2>Iniciar sesión</h2>
+
+    <div class="logo-div">
+      <a href="http://localhost:4200/products"
+        ><img class="logo" src="../../../assets/logo.png" alt="logo-shop"
+      /></a>
+    </div>
+    <h2>Log in</h2>
 
     <form class="form-style" [formGroup]="userForm" (ngSubmit)="save()">
       <div class="info-div">
@@ -10,13 +16,16 @@
       </div>
 
       <div class="info-div">
-        <label>Contraseña</label>
+        <label>Password</label>
         <input class="input-style" type="password" formControlName="password" />
       </div>
 
       <button class="button-style" type="submit" [disabled]="userForm.invalid">
-        Enviar
+        Send
       </button>
     </form>
   </div>
 </div>
+
+
+

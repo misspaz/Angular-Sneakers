@@ -3,6 +3,11 @@
   src: url(../../../assets//fonts/Sora-Bold.otf);
 }
 
+.logo {
+  width: 200px;
+}
+
+
 .form-group {
   width: 300px;
   color: white;

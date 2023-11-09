@@ -1,0 +1,45 @@
+<header class="header-detail">
+  <div class="logo-div">
+    <a href="http://localhost:4200/products"><img class="logo" src="../../../assets//logo-white.png" alt="logo" /></a>
+  </div>
+</header>
+
+<div class="cart-page">
+  <table class="cart-table">
+    <thead>
+      <tr>
+        <th class="th-style-number">Nº</th>
+        <th class="th-style-name">Product Name</th>
+        <th class="th-style-image">Product Image</th>
+        <th class="th-style-category">Category</th>
+        <th class="th-style-price">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tr-style" *ngFor="let product of products; let i = index">
+        <td class="td-style">{{ i + 1 }}</td>
+        <td class="td-style">{{ product.title }}</td>
+        <td class="td-style">
+          <img class="product-image" src="{{ product.image }}" alt="" />
+        </td>
+        <td class="td-style">{{ product.category }}</td>
+        <td class="td-style-price">{{ product.price }}</td>
+        <td class="td-style">{{ product.total }}</td>
+        <td>
+          <button (click)="removeItem(product)"><i></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 class="total-price">Total:{{ grandTotal }}€</h4>
+  <div class="buttons-div">
+    <button class="button-style">Checkout</button>
+    <button class="button-style-grey" (click)="emptycart()">Empty Cart</button>
+  </div>
+
+  <div class="banner-products">
+    <h3 class="h3-style">Back to products</h3>
+    <button class="button-shop-more" routerLink="/products">Shop More</button>
+  </div>
+</div>

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from '../models/product.model';
 import { ProductService } from '../services/product.service';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -9,13 +10,22 @@ import { Router } from '@angular/router'
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent implements OnInit {
+  public productList: any;
+  public totalItem: number = 0;
   products: IProduct[] = [];
   selectedCategory: string = '';
   httpCliente: any;
 
-  constructor(private productService: ProductService, private router: Router) {}
+  constructor(
+    private cartService: CartService,
+    private productService: ProductService,
+    private router: Router
+  ) {}
   ngOnInit(): void {
-    this.findAll();
+    this.findAll()
+    this.cartService.getProducts().subscribe((data) => {
+      this.totalItem = data.length;
+    });
   }
 
   findAll(): void {
@@ -24,10 +34,16 @@ export class ProductListComponent implements OnInit {
     });
   }
 
+  addtocart(item: any) {
+    this.cartService.addtoCart(item);
+  }
+
   searchByCategory(): void {
-    this.productService.findByCategory(this.selectedCategory).subscribe((data) => {
-      this.products = data; // Actualiza la lista de productos con los resultados de la búsqueda
-    });
+    this.productService
+      .findByCategory(this.selectedCategory)
+      .subscribe((data) => {
+        this.products = data;
+      });
   }
 
   navigateToProductDetail(id: number) {
@@ -37,13 +53,10 @@ export class ProductListComponent implements OnInit {
   navigateToProductEdit(id: number) {
     this.router.navigate(['products/edit', id]);
   }
-  
 
   deleteProduct(id: number): void {
     this.productService.delete(id).subscribe(() => {
-    this.products = this.products.filter((product) => product.id !== id);
+      this.products = this.products.filter((product) => product.id !== id);
     });
   }
-
-
 }

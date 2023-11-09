@@ -6,11 +6,11 @@ import { TOKEN, userUrl } from './shared/constants';
 import { jwtDecode } from 'jwt-decode';
 
 export interface Token {
-  sub: number; // id del usuario
+  sub: number;
   username: string;
   role: string;
-  exp: number; // timestamp con la fecha de expiración
-  iat: number; // Issued At: campo con la fecha de emisión del token
+  exp: number;
+  iat: number; 
 }
 
 @Injectable({
@@ -41,8 +41,6 @@ export class AuthService {
     logout() {
       localStorage.removeItem(TOKEN);
       this.router.navigate(['/auth/login']);
-      // Cuando el usuario cierra la sesión,
-      // emitimos false para isAdmin y isLoggedIn
       this.isAdmin.next(false);
       this.isOwner.next(false);
       this.isLoggedIn.next(false);
@@ -61,6 +59,7 @@ export class AuthService {
       let token = localStorage.getItem(TOKEN);
       if (!token) return false;
   
+      //ESTE JWTDECODE ESCRITO DE LA OTRA FORMA NOS DA EROR, SÓLO ASÍ DEJA DE DAR ERROR
       let decoded_token: Token = jwtDecode(token);
       return decoded_token.role === 'admin';
     }
@@ -79,7 +78,6 @@ export class AuthService {
     }
   
     handleLoginResponse(token: any) {
-      // Guarda el token en localStorage y actualiza el estado de isAdmin y isLoggedIn
       localStorage.setItem(TOKEN, token);
       let decoded_token: Token = jwtDecode(token);
       this.isAdmin.next(decoded_token.role === 'admin');

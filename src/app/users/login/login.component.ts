@@ -22,9 +22,8 @@ export class LoginComponent {
       password: this.userForm.get('password')?.value ?? '',
     };
 
-    this.authService.login(login).subscribe((data) => {
+    this.authService.login(login).subscribe((data: any) => {
       console.log(data.token);
-      // Guardar el token para utilizarlo en las posteriores peticiones
       this.authService.handleLoginResponse(data.token);
 
       this.router.navigate(['/products']);

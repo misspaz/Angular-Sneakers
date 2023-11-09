@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsRoutingModule } from './products/products/products-routing.module';
+import { CartComponent } from './products/cart/cart.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'auth',
-    loadChildren: () => import('./users/auth/auth.module').then(m => m.AuthModule) // lazy loading
+    loadChildren: () => import('./users/auth/auth.module').then(m => m.AuthModule)
   },
   {
     path: '',
@@ -29,6 +30,7 @@ const routes: Routes = [
     redirectTo: 'products',
     pathMatch: 'full',
   },
+  {path:'cart', component: CartComponent}
 ];
 
 @NgModule({
