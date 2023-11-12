@@ -12,8 +12,8 @@ export interface IUser {
   role?: UserRole;
   firstname: string;
   lastname: string;
-  phone: string;
-  address: {
+  phone?: string;
+  address?: {
     city: string;
     street: string;
     number: number;

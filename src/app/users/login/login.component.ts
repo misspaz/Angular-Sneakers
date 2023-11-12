@@ -22,11 +22,20 @@ export class LoginComponent {
       password: this.userForm.get('password')?.value ?? '',
     };
 
-    this.authService.login(login).subscribe((data: any) => {
-      console.log(data.token);
-      this.authService.handleLoginResponse(data.token);
-
-      this.router.navigate(['/products']);
-    });
+    this.authService.login(login.email, login.password).subscribe(
+      (data: any) => {
+        if (data.token) {
+          console.log(data.token);
+          this.authService.handleLoginResponse(data.token);
+          this.router.navigate(['/products']);
+        } else {
+          console.error('Token not found in the response.');
+        }
+      },
+      (error) => {
+        console.error('Error during login:', error);
+      }
+    );
   }
+
 }

@@ -1,27 +1,21 @@
-# AngularStore
+# ¡Hola! Esta son las instrucciones del proyecto final de Angular:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+-> Ejecutar el db.json (no pudimos usar finalmente la apifakestore y tiramos de json-server) con json-server --watch db.json --port 3000
 
-## Development server
+-> Iniciar el proyecto con ng serve --o
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+-> La página http://localhost:4200/products es la home donde están los productos de la tienda, podéis borrarlos con la "X", editarlos haciendo click en "Edit" y también añadirlos al carrito con "add to cart". Después de añadir uno o varios productos podéis hacer click en el carrito para ver el listado de zapatillas antes de hacer el checkout (no lo tiene incluido).
 
-## Code scaffolding
+-> En la barra de búsqueda podéis buscar por categoría, probad con "man" o "woman".
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-> En la barra superior hay un icono de perfil que tiene un enlace a la página de registro donde puedes registrate (funciona, comprobad la consola) y si ya tienes cuenta puedes hacer click en "Log in" y entrar con estos datos de prueba:
 
-## Build
+Email: kevin@gmail.com
+Password: kev02937@
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Comprobad la consola que diga "you are logged!" y el token que se genera uno temporalmente en localStorage.
 
-## Running unit tests
+Por último, tenemos un registro de usuarios con los detalles de cada usuario, por el momento no están linkados a ninguna parte pero la ruta es esta:
+http://localhost:4200/users/users
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+¡Gracias por ver el proyecto! :)
