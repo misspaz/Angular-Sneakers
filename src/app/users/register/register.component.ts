@@ -61,23 +61,4 @@ export class RegisterComponent {
 
 
 
-    // save() {
-
-    //   let register = {
-    //     username: this.userForm.get('username')?.value ?? '',
-    //     email: this.userForm.get('email')?.value ?? '',
-    //     password: this.userForm.get('password')?.value ?? '',
-    //     isOwner: this.userForm.get('isOwner')?.value ?? false,
-    //   }
-  
-    //   this.authService.register(register).subscribe((data: { token: any; }) => {
-    //     console.log(data.token);
-    //     this.authService.handleLoginResponse(data.token);
-    //     this.router.navigate(['/products']);
-  
-    //   });
-  
-    // }
-
-
 }

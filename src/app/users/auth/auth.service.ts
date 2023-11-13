@@ -48,11 +48,6 @@ export class AuthService {
     );
   }
 
-  // EL LOGIN DE ALAN
-  // login(login: any): Observable<any> {
-  //   return this.httpClient.post(`${this.url}/login`, login);
-  // }
-
   register(user: any): Observable<any> {
     return this.httpClient.post(`${this.url}`, user);
   }
@@ -78,7 +73,6 @@ export class AuthService {
     let token = localStorage.getItem(TOKEN);
     if (!token) return false;
 
-    //ESTE JWTDECODE ESCRITO DE LA OTRA FORMA NOS DA EROR, SÓLO ASÍ DEJA DE DAR ERROR
     let decoded_token: Token = jwtDecode(token);
     return decoded_token.role === 'admin';
   }

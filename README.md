@@ -18,4 +18,6 @@ Comprobad la consola que diga "you are logged!" y el token que se genera uno tem
 Por último, tenemos un registro de usuarios con los detalles de cada usuario, por el momento no están linkados a ninguna parte pero la ruta es esta:
 http://localhost:4200/users/users
 
+-> Se ha utilizado ngbootstrap porque Angular Material al principio nos funcionó pero luego nos dio error por manejar scss cuando el proyecto lo habíamos configurado con CSS.
+
 ¡Gracias por ver el proyecto! :)
